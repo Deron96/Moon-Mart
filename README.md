@@ -1,0 +1,71 @@
+# Moon-Mart Project
+
+## Overview
+Moon-Mart is a fictional retail store database designed to demonstrate advanced SQL skills, data generation, analysis, and visualization. This project includes:
+- A complete database generation script for ~70,000 transactions, ~800 customers, and 9 departments.
+- Analytical SQL queries for customer behavior, department performance, and forecasting.
+- Visualizations created in PostgreSQL.
+- A spreadsheet for adjusting sales-levels, number of customers, and number of transactions.
+
+## Project Highlights
+- **Custom Data Generation**:
+  - Designed a script to generate realistic customer demographics and transactions.
+  - Created ~70,000 transactions using randomized data with adjustable coefficients.
+  - Populated ~800 customers with first and last names pulled from `.csv` files.
+  - Script is reusable, with built in mechanisms for repeated generation of unique datasets to analyze
+  - Includes built in checks to ensure certain conditions are met, such as total payroll being between 15 and 30% of total sales, and each department having a supervisor.
+
+- **Key Analyses**:
+  - Customer segmentation by age groups (e.g., highest spenders in the 30-40 range).
+  - Department performance analysis, including payroll-to-sales ratios.
+  - Forecasting sales trends using a 7-day moving average and calculating MAPE.
+  - Employee data reveals a strong correlation between seniority and rate of pay.
+
+- **Visualizations**:
+  - Charts and graphs created in PostgreSQL, showcasing department performance and customer demographics.
+ 
+- **Tools Used**:
+  - PostgreSQL
+  - SQL
+  - Randomized data generation
+  - Excel for coefficient adjustments
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+## How to Use the Project
+
+1. Download the script: "Moon-Mart Script (Official).sql" from the "Moon-Mart Generation Script" folder.
+2. This project requires two .csv files for generating random first and last names:
+      first_names.csv
+      last_names.csv
+These files are included in the Moon-Mart-Names folder of this repository. You must download these files and ensure they are accessible locally before running the script.
+3. The SQL script includes COPY commands to import data from the .csv files into the database. The commands are as follows:
+
+      COPY FirstNames(year, name, gender, births, rank)
+      FROM '/Users/gregorylester/Documents/Moon-Mart/Moon-Mart Names/first_names.csv'
+      DELIMITER ',' CSV HEADER;
+
+      COPY LastNames(name, rank, count)
+      FROM '/Users/gregorylester/Documents/Moon-Mart/Moon-Mart Names/last_names.csv'
+      DELIMITER ',' CSV HEADER;
+   
+You need to update the FROM paths to match the location of these .csv files on your computer. Here's how to do it:
+
+Locate where you saved the first_names.csv and last_names.csv files on your computer.
+Replace the FROM path with the actual path on your machine. 
+Save the updated script after replacing the paths.
+4. Run the Database Generation Script:
+      Open PostgreSQL or your preferred SQL tool.
+      Run the script from "Moon-Mart Script (Official).sql".
+5.  Explore the Analysis Queries:
+      Navigate to the Moon-Mart-SQL folder.
+      Open and run the analysis_queries.sql file to reproduce the analyses and insights.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+## Project Files
+- Moon-Mart-Generation-Script: SQL script to generate the entire database.
+- Moon-Mart-Names: CSV files of first and last names for customer and employee generation.
+- Moon-Mart-Spreadsheets: An Excel file for adjusting data generation coefficients.
+- Moon-Mart-SQL: Analytical SQL queries and observations.
+- Moon-Mart-Visualizations: PNG files of visualizations created in PostgreSQL.
