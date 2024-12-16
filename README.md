@@ -1,7 +1,12 @@
 # Moon-Mart Project
 
 ## Overview
-Moon-Mart is a fictional retail store database designed to demonstrate advanced SQL skills, data generation, analysis, and visualization. This project includes:
+Moon-Mart is a fictional retail store database designed to demonstrate advanced SQL skills, data generation, analysis, and visualization.
+It started from a desire I had to randomly generate a database in which the the employees and customers had actual names.
+In previous random generations, I had identified individuals as "Employee1" or "Customer1", but I now wanted it to be more realistic.
+I had simple idea of extracting a list of first and last names from the internet and assigning them numbers.
+These I would use to match with my RANDOM() function in order to provide everyone with not only unique IDs, but unique first and last names, also.
+This project includes:
 - A complete database generation script for ~70,000 transactions, ~800 customers, and 9 departments.
 - Analytical SQL queries for customer behavior, department performance, and forecasting.
 - Visualizations created in PostgreSQL.
