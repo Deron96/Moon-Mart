@@ -1,4 +1,6 @@
 -- 12/15/2024
+-- Author: Deron Lester
+
 BEGIN; -- Start the transaction of populating this database
 
 -- The following commands will allow this script to be run over and over again
