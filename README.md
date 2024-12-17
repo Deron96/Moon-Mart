@@ -11,7 +11,7 @@ The format of each transaction in SalesTransactions2023 is a unique transaction_
 
 This enabled me to keep the average departments involved per transaction in the 3 to 4 range (I have a built in check to ensure this), and it allowed me to base the demographics of the customer and the time of the year to determine the probability that he or she made a purchase on any given date for each individual department.
 
-Although this method may seem a bit counterintuitive, it allowed me to seamlessly integrate desired gender-based, age-based, and seasonal trends into my SalesTransactions2023 dataset.
+Although this method may seem a bit counterintuitive, it allowed me to seamlessly integrate desired gender-based, age-based, and seasonal trends into my SalesTransactions2023 dataset. Throughout this database generation script I have placed multiple DO $$ blocks, such as one with with loops to make sure that a minimum of 5 employees are assigned to each department. Checks such as this have proved quite useful due to the random nature of this dataset (despite it having trends) and have promoted logical consistency throughout its tables.
 
 This project includes:
 - A complete database generation script for ~70,000 transactions, ~800 customers, and 9 departments with realistic customer spending habits and employee compensation patterns.
