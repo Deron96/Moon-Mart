@@ -48,8 +48,8 @@ This project includes:
 
 1. Download the script: "Moon-Mart Script (Official).sql" from the "Moon-Mart Generation Script" folder.
 2. This project requires two .csv files for generating random first and last names:
-      first_names.csv
-      last_names.csv
+      "first_names.csv"
+      "last_names.csv"
 These files are included in the Moon-Mart-Names folder of this repository. You must download these files and ensure they are accessible locally before running the script.
 3. The SQL script includes COPY commands to import data from the .csv files into the database. The commands are as follows:
 
@@ -60,19 +60,17 @@ These files are included in the Moon-Mart-Names folder of this repository. You m
       COPY LastNames(name, rank, count)
       FROM '/Users/gregorylester/Documents/Moon-Mart/Moon-Mart Names/last_names.csv'
       DELIMITER ',' CSV HEADER;
-   
-You need to update the FROM paths to match the location of these .csv files on your computer. Here's how to do it:
 
-Locate where you saved the first_names.csv and last_names.csv files on your computer.
+You need to update the FROM paths to match the location of these .csv files on your computer. Here's how to do it:
+Locate where you saved the "first_names.csv" and "last_names.csv" files on your computer.
 Replace the FROM path with the actual path on your machine. 
 Save the updated script after replacing the paths.
 4. Run the Database Generation Script:
-      Open PostgreSQL or your preferred SQL tool.
-      Run the script from "Moon-Mart Script (Official).sql".
-5.  Explore the Analysis Queries:
-      Navigate to the Moon-Mart-SQL folder.
-      Open and run the analysis_queries.sql file to reproduce the analyses and insights.
-
+        Open PostgreSQL or your preferred SQL tool.
+        Run the script from "Moon-Mart Script (Official).sql".   
+5. Explore the Analysis Queries:
+        Navigate to the Moon-Mart-SQL folder.
+        Open and run the analysis_queries.sql file to reproduce the analyses and insights.
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 ## Project Files
