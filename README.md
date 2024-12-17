@@ -49,19 +49,21 @@ This project includes:
 1. Download the script: "Moon-Mart Script (Official).sql" from the "Moon-Mart Generation Script" folder.
 
 2. This project requires two .csv files for generating random first and last names:
-      "first_names.csv"
-      "last_names.csv"
+
+     	 "first_names.csv"
+     	 "last_names.csv"
+
 These files are included in the Moon-Mart-Names folder of this repository. You must download these files and ensure they are accessible locally before running the script.
 
 3. The SQL script includes COPY commands to import data from the .csv files into the database. The commands are as follows:
 
-      COPY FirstNames(year, name, gender, births, rank)
-      FROM '/Users/gregorylester/Documents/Moon-Mart/Moon-Mart Names/first_names.csv'
-      DELIMITER ',' CSV HEADER;
+     	 COPY FirstNames(year, name, gender, births, rank)
+     	 FROM '/Users/gregorylester/Documents/Moon-Mart/Moon-Mart Names/first_names.csv'
+      	 DELIMITER ',' CSV HEADER;
 
-      COPY LastNames(name, rank, count)
-      FROM '/Users/gregorylester/Documents/Moon-Mart/Moon-Mart Names/last_names.csv'
-      DELIMITER ',' CSV HEADER;
+     	 COPY LastNames(name, rank, count)
+    	 FROM '/Users/gregorylester/Documents/Moon-Mart/Moon-Mart Names/last_names.csv'
+     	 DELIMITER ',' CSV HEADER;
 
 You need to update the FROM paths to match the location of these .csv files on your computer. Here's how to do it:
 Locate where you saved the "first_names.csv" and "last_names.csv" files on your computer.
