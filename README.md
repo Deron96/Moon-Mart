@@ -5,7 +5,7 @@ Moon-Mart is a fictional retail store database designed to demonstrate advanced 
 It started from a desire I had to randomly generate a database in which the the employees and customers had actual names.
 In previous random generations, I had identified individuals as "Employee1" or "Customer1", but I now wanted it to be more realistic.
 
-I had simple idea of extracting a list of first and last names from the internet and assigning them numbers.
+I had the simple idea of extracting a list of first and last names from the internet and assigning them numbers.
 These I would use to match with my RANDOM() function in order to provide everyone with not only unique IDs, but also unique first and last names.
 The format of each transaction in SalesTransactions2023 is a unique transaction_id, a date and customer_id, and the amount spent in each individual department. From this table the individual Department tables are generated, not vice-versa.
 
