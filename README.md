@@ -4,10 +4,13 @@
 Moon-Mart is a fictional retail store database designed to demonstrate advanced SQL skills, data generation, analysis, and visualization.
 It started from a desire I had to randomly generate a database in which the the employees and customers had actual names.
 In previous random generations, I had identified individuals as "Employee1" or "Customer1", but I now wanted it to be more realistic.
+
 I had simple idea of extracting a list of first and last names from the internet and assigning them numbers.
 These I would use to match with my RANDOM() function in order to provide everyone with not only unique IDs, but also unique first and last names.
 The format of each transaction in SalesTransactions2023 is a unique transaction_id, a date and customer_id, and the amount spent in each individual department. From this table the individual Department tables are generated, not vice-versa.
-This enabled me to keep the average departments involved per transaction in the 3 to 4 range (I have a built in check to ensure this), and it allowed me to base the demographics of the customer and the time of the year to determine whether or not he or she made a purchase on any given date based off of demographic factors and probability. 
+
+This enabled me to keep the average departments involved per transaction in the 3 to 4 range (I have a built in check to ensure this), and it allowed me to base the demographics of the customer and the time of the year to determine the probability that he or she made a purchase on any given date for each individual department.
+
 Although this method may seem a bit counterintuitive, it allowed me to seamlessly integrate desired gender-based, age-based, and seasonal trends into my SalesTransactions2023 dataset.
 
 This project includes:
