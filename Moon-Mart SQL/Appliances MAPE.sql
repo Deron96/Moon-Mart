@@ -26,3 +26,5 @@ DailyError AS (
 -- Calculate Mean Absolute Percentage Error:
 SELECT ROUND(AVG(daily_error), 2) AS mape
 FROM DailyError;
+
+-- MAPE = 62.83% -- This is likely so high due to the random nature of number of units sold daily, and the high price of appliances
