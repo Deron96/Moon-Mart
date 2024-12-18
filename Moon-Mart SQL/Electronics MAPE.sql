@@ -26,3 +26,5 @@ DailyError AS (
 -- Calculate Mean Absolute Percentage Error:
 SELECT ROUND(AVG(daily_error), 2) AS mape
 FROM DailyError;
+
+-- MAPE = 22.78%
