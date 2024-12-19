@@ -34,7 +34,7 @@ This project includes:
   - Employee data reveals a strong correlation between seniority and rate of pay.
 
 - **Visualizations**:
-  - Charts and graphs created in PostgreSQL, showcasing department performance and customer demographics.
+  - Charts and graphs created in PostgreSQL, as well as Tableau, showcasing department performance and customer demographics.
  
 - **Tools Used**:
   - PostgreSQL
@@ -86,3 +86,14 @@ Save the updated script after replacing the paths.
 - Moon-Mart-Spreadsheets: An Excel file for adjusting data generation coefficients.
 - Moon-Mart-SQL: Analytical SQL queries and observations.
 - Moon-Mart-Visualizations: PNG files of visualizations created in PostgreSQL.
+
+## Tableau Visualizations
+The file `Moon-Mart_Visualizations.twbx` contains all Tableau visualizations for this project, including:
+- Department Sales Trends Over Time (Area Chart)
+- Total Monthly Sales Performance (Line Chart)
+- Department Sales Heatmap: Monthly Activity
+
+To explore the interactive Tableau visuals:
+1. Download the `.twbx` file from the `Moon-Mart Tableau` folder.
+2. Open the file in Tableau Desktop or Tableau Public.
+
